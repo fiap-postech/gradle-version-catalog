@@ -24,8 +24,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/fiap-postech/gradle-version-catalog")
             credentials {
-                username = findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR")
-                password = findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+                username = findProperty("gprUser") as String? ?: System.getenv("GITHUB_ACTOR")
+                password = findProperty("gprKey") as String? ?: System.getenv("GITHUB_TOKEN")
             }
         }
     }
