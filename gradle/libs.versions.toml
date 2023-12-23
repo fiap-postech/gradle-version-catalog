@@ -30,7 +30,7 @@ lombok-mapstruct-binding = { group="org.projectlombok", name="lombok-mapstruct-b
 mapstruct = { group="org.mapstruct", name="mapstruct", version.ref="mapstructVersion" }
 mapstruct-processor = { group="org.mapstruct", name="mapstruct-processor", version.ref="mapstructVersion" }
 moneta = { group="org.javamoney", name="moneta", version.ref="monetaVersion" }
-monmysql-connector-j = { group="com.mysql", name="mysql-connector-j", version.ref="mysqlVersion" }
+mysql-connector-j = { group="com.mysql", name="mysql-connector-j", version.ref="mysqlVersion" }
 spring-context = { group="org.springframework", name="spring-context", version.ref="springVersion" }
 spring-core = { group="org.springframework", name="spring-core", version.ref="springVersion" }
 spring-boot-starter-actuator = { group="org.springframework.boot", name="spring-boot-starter-actuator", version.ref="springBootVersion" }
