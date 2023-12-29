@@ -18,6 +18,7 @@ springDataDynamoVersion="5.2.5"
 springDependencyVersion="1.1.4"
 springDocOpenAPIVersion="2.0.1"
 springVersion="6.1.2"
+testContainersVersion="1.19.3"
 vavrVersion="0.10.4"
 
 [libraries]
@@ -28,13 +29,16 @@ instancio-junit = { group="org.instancio", name="instancio-junit", version.ref="
 jackson-annotations = { group="com.fasterxml.jackson.core", name="jackson-annotations", version.ref="jacksonVersion" }
 jakarta-validation-api = { group="jakarta.validation", name="jakarta.validation-api", version.ref="jakartaValidationVersion" }
 json-schema-validator = { group="io.rest-assured", name="json-schema-validator", version.ref="restAssuredVersion" }
+junit-jupiter = { group="org.testcontainers", name="junit-jupiter", version.ref="testContainersVersion" }
 junit-jupiter-api = { group="org.junit.jupiter", name="junit-jupiter-api", version.ref="jupiterVersion" }
 junit-jupiter-engine = { group="org.junit.jupiter", name="junit-jupiter-engine", version.ref="jupiterVersion" }
+localstack = { group="org.testcontainers", name="localstack", version.ref="testContainersVersion" }
 lombok = { group="org.projectlombok", name="lombok", version.ref="lombokVersion" }
 lombok-mapstruct-binding = { group="org.projectlombok", name="lombok-mapstruct-binding", version.ref="lombokMapstructBindingVersion" }
 mapstruct = { group="org.mapstruct", name="mapstruct", version.ref="mapstructVersion" }
 mapstruct-processor = { group="org.mapstruct", name="mapstruct-processor", version.ref="mapstructVersion" }
 moneta = { group="org.javamoney", name="moneta", version.ref="monetaVersion" }
+mysql = { group="org.testcontainers", name="mysql", version.ref="testContainersVersion" }
 mysql-connector-j = { group="com.mysql", name="mysql-connector-j", version.ref="mysqlVersion" }
 rest-assured = { group="io.rest-assured", name="rest-assured", version.ref="restAssuredVersion" }
 spring-context = { group="org.springframework", name="spring-context", version.ref="springVersion" }
