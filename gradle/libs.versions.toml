@@ -2,6 +2,7 @@
 apacheCommonsVersion="3.12.0"
 assertjCoreVersion="3.24.2"
 flywayVersion="9.16.3"
+instancioVersion="3.6.0"
 jacksonVersion="2.2.1"
 jakartaValidationVersion="3.0.2"
 jupiterVersion="5.9.2"
@@ -22,6 +23,8 @@ vavrVersion="0.10.4"
 [libraries]
 assertj-core = { group="org.assertj", name="assertj-core", version.ref="assertjCoreVersion" }
 commons-lang3 = { group="org.apache.commons", name="commons-lang3", version.ref="apacheCommonsVersion" }
+instancio-core = { group="org.instancio", name="instancio-core", version.ref="instancioVersion" }
+instancio-junit = { group="org.instancio", name="instancio-junit", version.ref="instancioVersion" }
 jackson-annotations = { group="com.fasterxml.jackson.core", name="jackson-annotations", version.ref="jacksonVersion" }
 jakarta-validation-api = { group="jakarta.validation", name="jakarta.validation-api", version.ref="jakartaValidationVersion" }
 json-schema-validator = { group="io.rest-assured", name="json-schema-validator", version.ref="restAssuredVersion" }
