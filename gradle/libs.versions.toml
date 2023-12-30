@@ -24,21 +24,19 @@ vavrVersion="0.10.4"
 [libraries]
 assertj-core = { group="org.assertj", name="assertj-core", version.ref="assertjCoreVersion" }
 commons-lang3 = { group="org.apache.commons", name="commons-lang3", version.ref="apacheCommonsVersion" }
+flyway-mysql = { group = "org.flywaydb", name = "flyway-mysql", version.ref = "flywayVersion" }
 instancio-core = { group="org.instancio", name="instancio-core", version.ref="instancioVersion" }
 instancio-junit = { group="org.instancio", name="instancio-junit", version.ref="instancioVersion" }
 jackson-annotations = { group="com.fasterxml.jackson.core", name="jackson-annotations", version.ref="jacksonVersion" }
 jakarta-validation-api = { group="jakarta.validation", name="jakarta.validation-api", version.ref="jakartaValidationVersion" }
 json-schema-validator = { group="io.rest-assured", name="json-schema-validator", version.ref="restAssuredVersion" }
-junit-jupiter = { group="org.testcontainers", name="junit-jupiter", version.ref="testContainersVersion" }
 junit-jupiter-api = { group="org.junit.jupiter", name="junit-jupiter-api", version.ref="jupiterVersion" }
 junit-jupiter-engine = { group="org.junit.jupiter", name="junit-jupiter-engine", version.ref="jupiterVersion" }
-localstack = { group="org.testcontainers", name="localstack", version.ref="testContainersVersion" }
 lombok = { group="org.projectlombok", name="lombok", version.ref="lombokVersion" }
 lombok-mapstruct-binding = { group="org.projectlombok", name="lombok-mapstruct-binding", version.ref="lombokMapstructBindingVersion" }
 mapstruct = { group="org.mapstruct", name="mapstruct", version.ref="mapstructVersion" }
 mapstruct-processor = { group="org.mapstruct", name="mapstruct-processor", version.ref="mapstructVersion" }
 moneta = { group="org.javamoney", name="moneta", version.ref="monetaVersion" }
-mysql = { group="org.testcontainers", name="mysql", version.ref="testContainersVersion" }
 mysql-connector-j = { group="com.mysql", name="mysql-connector-j", version.ref="mysqlVersion" }
 rest-assured = { group="io.rest-assured", name="rest-assured", version.ref="restAssuredVersion" }
 spring-context = { group="org.springframework", name="spring-context", version.ref="springVersion" }
@@ -47,6 +45,7 @@ spring-boot-starter-actuator = { group="org.springframework.boot", name="spring-
 spring-boot-starter-data-jpa = { group="org.springframework.boot", name="spring-boot-starter-data-jpa", version.ref="springBootVersion" }
 spring-boot-starter-data-mongodb = { group="org.springframework.boot", name="spring-boot-starter-data-mongodb", version.ref="springBootVersion" }
 spring-boot-starter-data-redis = { group="org.springframework.boot", name="spring-boot-starter-data-redis", version.ref="springBootVersion" }
+spring-boot-starter-json = { group="org.springframework.boot", name="spring-boot-starter-json", version.ref="springBootVersion" }
 spring-boot-starter-logging = { group="org.springframework.boot", name="spring-boot-starter-logging", version.ref="springBootVersion" }
 spring-boot-starter-validation = { group="org.springframework.boot", name="spring-boot-starter-validation", version.ref="springBootVersion" }
 spring-boot-starter-test = { group="org.springframework.boot", name="spring-boot-starter-test", version.ref="springBootVersion" }
@@ -55,10 +54,12 @@ spring-cloud-starter-openfeign = { group="org.springframework.cloud", name="spri
 spring-data-commons = { group="org.springframework.data", name="spring-data-commons", version.ref="springBootVersion" }
 spring-data-dynamodb = { group="io.github.boostchicken", name="spring-data-dynamodb", version.ref="springDataDynamoVersion" }
 springdoc-openapi-starter-webmvc-ui = { group="org.springdoc", name="springdoc-openapi-starter-webmvc-ui", version.ref="springDocOpenAPIVersion" }
-flyway-mysql = { group = "org.flywaydb", name = "flyway-mysql", version.ref = "flywayVersion" }
+testcontainers-junit-jupiter = { group="org.testcontainers", name="junit-jupiter", version.ref="testContainersVersion" }
+testcontainers-localstack = { group="org.testcontainers", name="localstack", version.ref="testContainersVersion" }
+testcontainers-mysql = { group="org.testcontainers", name="mysql", version.ref="testContainersVersion" }
 vavr = { group = "io.vavr", name = "vavr", version.ref = "vavrVersion"}
 
 [plugins]
 spring-boot-plugin = { id = "org.springframework.boot", version.ref = "springBootVersion" }
 flyway-plugin = { id = "org.flywaydb.flyway", version.ref = "flywayVersion" }
-spring-plugin = { id =  "io.spring.dependency-management",  version.ref =  "springDependencyVersion" }
+spring-dependency-management-plugin = { id =  "io.spring.dependency-management",  version.ref =  "springDependencyVersion" }

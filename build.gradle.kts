@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "br.com.fiap.tech.challenge"
-version = "1.0.4"
+version = "1.0.5"
 
 catalog {
     versionCatalog {
